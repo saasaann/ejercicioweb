@@ -8,31 +8,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Hidden brand</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Offcanvas navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-      </nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="opciones.html">Opciones</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
     <h1><b>INICIO</b></h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -45,7 +57,7 @@
             <img src=".\imgs\udc.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src=".\imgs\imagen.jpeg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="..." class="d-block w-100" alt="...">
@@ -60,24 +72,25 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <p></p>
       <div class="card-group">
-        <div class="card">
-          <img src=".\imgs\udc.png" class="card-img-top" alt="...">
+        <div class="card text-center mb-3">
+          <img src=".\imgs\udc.png" class="card-img-top" alt="..." height="300">
           <div class="card-body">
             <h5 class="card-title">Carrera en ingeniería informática en la UDC</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Revísalo en opciones</h6>
             <p class="card-text">La Ingeniería Informática en la Universidade da Coruña (UDC) ofrece
                 una formación orientada al desarrollo de software, la programación,
                 los sistemas informáticos y las nuevas tecnologías. A lo largo de la
                 carrera, los estudiantes adquieren conocimientos y habilidades para
                 diseñar soluciones tecnológicas, resolver problemas y afrontar los
                 retos del sector digital.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="https://www.udc.gal/" class="btn btn-primary">Visita la página de la UDC</a>
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card text-center mb-3">
+          <img src="..." class="card-img-top" alt="..." height="300">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
@@ -86,8 +99,8 @@
             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
           </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card text-center mb-3">
+          <img src="..." class="card-img-top" alt="..." height="300">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
@@ -97,19 +110,7 @@
           </div>
         </div>
       </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                Grado
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                Ventajas
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                Desventajas
-            </div>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

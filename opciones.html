@@ -22,10 +22,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="opciones.html">Opciones</a>
+                  <a class="nav-link active" href="opciones.html">Opciones</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,220 +47,243 @@
     </nav>
     <p></p>
 
+    
     <div class="container mt-5 pt-4">
-        <div class="row justify-content-center text-center">
+        <h2 class="text-center mb-4">Comparación de grados universitarios</h2>
     
-            <div class="col-12 col-md-6 col-lg-4">
-                <h2>Grado</h2>
-                <div class="accordion accordion-flush" id="accordionGrado">
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle text-center">
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado1">
-                                Ingeniería Informática
-                            </button>
-                        </h2>
-                        <div id="grado1" class="accordion-collapse collapse" data-bs-parent="#accordionGrado">
-                            <div class="accordion-body">
-                                El Grado en Ingeniería Informática de la Universidade da Coruña (UDC) se imparte en la Facultad de Informática, en A Coruña. Forma profesionales capaces de diseñar, desarrollar y mantener programas, aplicaciones y sistemas informáticos.
+                <thead class="table-dark">
+                    <tr>
+                        <th>Grado</th>
+                        <th>Descripción</th>
+                        <th>Ventajas</th>
+                        <th>Desventajas</th>
+                    </tr>
+                </thead>
     
-                                <ul class="text-start mt-3">
-                                    <li><strong>Duración:</strong> 4 cursos académicos.</li>
-                                    <li><strong>Créditos:</strong> 240 ECTS.</li>
-                                    <li><strong>Modalidad:</strong> Presencial.</li>
-                                    <li><strong>Acceso:</strong> Bachillerato y PAU u otras vías legales de acceso universitario.</li>
-                                    <li><strong>Admisión:</strong> Preinscripción y asignación de plazas mediante la CIUG.</li>
-                                    <li><strong>Título:</strong> Graduado/a en Ingeniería Informática.</li>
-                                </ul>
-                                <a href="https://estudos.udc.es/es/study/detail/614g01v01" target="_blank">Fuente 1: UDC – Información del grado</a><br>
-                                <a href="https://www.ciug.gal/" target="_blank">Fuente 2: CIUG – Acceso universitario</a>
+                <tbody>
+    
+                    <tr>
+                        <th scope="row">Ingeniería Informática</th>
+    
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#descripcion1">
+                                            Ver descripción
+                                        </button>
+                                    </h2>
+                                    <div id="descripcion1" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            El Grado en Ingeniería Informática de la UDC forma profesionales capaces de diseñar, desarrollar y mantener programas, aplicaciones y sistemas informáticos.
+    
+                                            <ul class="mt-3">
+                                                <li><strong>Duración:</strong> 4 cursos académicos.</li>
+                                                <li><strong>Créditos:</strong> 240 ECTS.</li>
+                                                <li><strong>Modalidad:</strong> Presencial.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado2">
-                                Inteligencia Artificial
-                            </button>
-                        </h2>
-                        <div id="grado2" class="accordion-collapse collapse" data-bs-parent="#accordionGrado">
-                            <div class="accordion-body">
-                                El Grado en Inteligencia Artificial de la UDC prepara especialistas en el desarrollo de sistemas capaces de aprender, reconocer patrones y automatizar tareas. Incluye materias como aprendizaje automático, robótica, visión artificial y procesamiento del lenguaje natural.
-    
-                                <ul class="text-start mt-3">
-                                    <li><strong>Duración:</strong> 4 cursos académicos.</li>
-                                    <li><strong>Créditos:</strong> 240 ECTS.</li>
-                                    <li><strong>Modalidad:</strong> Presencial.</li>
-                                    <li><strong>Acceso:</strong> Bachillerato y PAU u otras vías legales de acceso universitario.</li>
-                                    <li><strong>Admisión:</strong> Preinscripción y asignación de plazas mediante la CIUG.</li>
-                                    <li><strong>Título:</strong> Graduado/a en Inteligencia Artificial.</li>
-                                </ul>
-                                <a href="https://estudos.udc.es/es/study/detail/614g03v01" target="_blank">Fuente 1: UDC – Información del grado</a><br>
-                                <a href="https://www.ciug.gal/" target="_blank">Fuente 2: CIUG – Acceso universitario</a>
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#ventajas1">
+                                            Ver ventajas
+                                        </button>
+                                    </h2>
+                                    <div id="ventajas1" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            <ul>
+                                                <li>Amplia variedad de salidas profesionales.</li>
+                                                <li>Formación general que permite especializarse en diferentes áreas tecnológicas.</li>
+                                                <li>Competencias en programación y desarrollo de software.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grado3">
-                                Ciencia e Ingeniería de Datos
-                            </button>
-                        </h2>
-                        <div id="grado3" class="accordion-collapse collapse" data-bs-parent="#accordionGrado">
-                            <div class="accordion-body">
-                                El Grado en Ciencia e Ingeniería de Datos de la UDC se centra en recoger, procesar y analizar grandes cantidades de información mediante herramientas matemáticas, estadísticas e informáticas. Su objetivo es obtener conocimientos útiles para resolver problemas y facilitar la toma de decisiones.
-    
-                                <ul class="text-start mt-3">
-                                    <li><strong>Duración:</strong> 4 cursos académicos.</li>
-                                    <li><strong>Créditos:</strong> 240 ECTS.</li>
-                                    <li><strong>Modalidad:</strong> Presencial.</li>
-                                    <li><strong>Acceso:</strong> Bachillerato y PAU u otras vías legales de acceso universitario.</li>
-                                    <li><strong>Admisión:</strong> Preinscripción y asignación de plazas mediante la CIUG.</li>
-                                    <li><strong>Título:</strong> Graduado/a en Ciencia e Ingeniería de Datos.</li>
-                                </ul>
-                                <a href="https://estudos.udc.es/es/study/detail/614g02v01" target="_blank">Fuente 1: UDC – Información del grado</a><br>
-                                <a href="https://www.ciug.gal/" target="_blank">Fuente 2: CIUG – Acceso universitario</a>
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#desventajas1">
+                                            Ver desventajas
+                                        </button>
+                                    </h2>
+                                    <div id="desventajas1" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            <ul>
+                                                <li>Complejidad técnica y necesidad de resolver problemas abstractos.</li>
+                                                <li>Actualización continua debido a la evolución de las tecnologías.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
+                    </tr>
     
-                </div>
-            </div>
+                    <!-- INTELIGENCIA ARTIFICIAL -->
+                    <tr>
+                        <th scope="row">Inteligencia Artificial</th>
     
-            <div class="col-12 col-md-6 col-lg-4">
-                <h2>Ventajas</h2>
-                <div class="accordion accordion-flush" id="accordionVentajas">
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#descripcion2">
+                                            Ver descripción
+                                        </button>
+                                    </h2>
+                                    <div id="descripcion2" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            El Grado en Inteligencia Artificial de la UDC prepara especialistas en el desarrollo de sistemas capaces de aprender, reconocer patrones y automatizar tareas.
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ventaja1">
-                                Ingeniería Informática
-                            </button>
-                        </h2>
-                        <div id="ventaja1" class="accordion-collapse collapse" data-bs-parent="#accordionVentajas">
-                            <div class="accordion-body text-start">
-                                <strong>Competencias útiles:</strong>
-                                <ul>
-                                    <li>Programación y desarrollo de software.</li>
-                                    <li>Resolución de problemas lógicos y técnicos.</li>
-                                    <li>Diseño y gestión de sistemas informáticos.</li>
-                                </ul>
-                                <strong>Ventajas:</strong>
-                                <ul>
-                                    <li>Amplia variedad de salidas profesionales, desde el desarrollo web hasta la ciberseguridad y la administración de sistemas.</li>
-                                    <li>Formación general que permite especializarse posteriormente en diferentes áreas tecnológicas.</li>
-                                </ul>
+                                            <ul class="mt-3">
+                                                <li><strong>Duración:</strong> 4 cursos académicos.</li>
+                                                <li><strong>Créditos:</strong> 240 ECTS.</li>
+                                                <li><strong>Modalidad:</strong> Presencial.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ventaja2">
-                                Inteligencia Artificial
-                            </button>
-                        </h2>
-                        <div id="ventaja2" class="accordion-collapse collapse" data-bs-parent="#accordionVentajas">
-                            <div class="accordion-body text-start">
-                                <strong>Competencias útiles:</strong>
-                                <ul>
-                                    <li>Programación y aprendizaje automático.</li>
-                                    <li>Razonamiento matemático y estadístico.</li>
-                                    <li>Diseño de sistemas inteligentes.</li>
-                                </ul>
-                                <strong>Ventajas:</strong>
-                                <ul>
-                                    <li>Permite trabajar en un sector tecnológico especializado y con aplicaciones en numerosos campos, como la medicina, la industria o la investigación.</li>
-                                    <li>Ofrece la posibilidad de participar en el desarrollo de nuevas tecnologías y soluciones automatizadas.</li>
-                                </ul>
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#ventajas2">
+                                            Ver ventajas
+                                        </button>
+                                    </h2>
+                                    <div id="ventajas2" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            <ul>
+                                                <li>Sector tecnológico especializado con aplicaciones en numerosos campos.</li>
+                                                <li>Posibilidad de participar en el desarrollo de nuevas tecnologías.</li>
+                                                <li>Competencias en aprendizaje automático y sistemas inteligentes.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ventaja3">
-                                Ciencia e Ingeniería de Datos
-                            </button>
-                        </h2>
-                        <div id="ventaja3" class="accordion-collapse collapse" data-bs-parent="#accordionVentajas">
-                            <div class="accordion-body text-start">
-                                <strong>Competencias útiles:</strong>
-                                <ul>
-                                    <li>Análisis e interpretación de datos.</li>
-                                    <li>Estadística y programación.</li>
-                                    <li>Visualización y gestión de información.</li>
-                                </ul>
-                                <strong>Ventajas:</strong>
-                                <ul>
-                                    <li>Sus conocimientos pueden aplicarse en sectores muy diferentes, como las finanzas, la investigación, el comercio o la sanidad.</li>
-                                    <li>Permite transformar grandes cantidades de información en conclusiones útiles para mejorar decisiones y procesos empresariales.</li>
-                                </ul>
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#desventajas2">
+                                            Ver desventajas
+                                        </button>
+                                    </h2>
+                                    <div id="desventajas2" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            <ul>
+                                                <li>Elevada exigencia matemática.</li>
+                                                <li>Especialización temprana frente a una formación informática más general.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
+                    </tr>
     
-                </div>
-            </div>
+                    <!-- CIENCIA E INGENIERÍA DE DATOS -->
+                    <tr>
+                        <th scope="row">Ciencia e Ingeniería de Datos</th>
     
-            <div class="col-12 col-md-6 col-lg-4">
-                <h2>Desventajas</h2>
-                <div class="accordion accordion-flush" id="accordionDesventajas">
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#descripcion3">
+                                            Ver descripción
+                                        </button>
+                                    </h2>
+                                    <div id="descripcion3" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            El Grado en Ciencia e Ingeniería de Datos de la UDC se centra en recoger, procesar y analizar grandes cantidades de información mediante herramientas matemáticas, estadísticas e informáticas.
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desventaja1">
-                                Ingeniería Informática
-                            </button>
-                        </h2>
-                        <div id="desventaja1" class="accordion-collapse collapse" data-bs-parent="#accordionDesventajas">
-                            <div class="accordion-body text-start">
-                                <ul>
-                                    <li><strong>Complejidad técnica:</strong> requiere constancia y capacidad para resolver problemas abstractos, especialmente en programación, matemáticas y algoritmos.</li>
-                                    <li><strong>Actualización continua:</strong> las tecnologías y herramientas informáticas evolucionan rápidamente, por lo que es necesario seguir aprendiendo durante toda la trayectoria profesional.</li>
-                                </ul>
+                                            <ul class="mt-3">
+                                                <li><strong>Duración:</strong> 4 cursos académicos.</li>
+                                                <li><strong>Créditos:</strong> 240 ECTS.</li>
+                                                <li><strong>Modalidad:</strong> Presencial.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desventaja2">
-                                Inteligencia Artificial
-                            </button>
-                        </h2>
-                        <div id="desventaja2" class="accordion-collapse collapse" data-bs-parent="#accordionDesventajas">
-                            <div class="accordion-body text-start">
-                                <ul>
-                                    <li><strong>Elevada exigencia matemática:</strong> para comprender y desarrollar modelos de inteligencia artificial es necesario dominar conceptos de álgebra, cálculo, probabilidad y estadística.</li>
-                                    <li><strong>Especialización temprana:</strong> su enfoque más específico puede limitar la formación general en otras áreas de la informática frente a un grado más amplio.</li>
-                                </ul>
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#ventajas3">
+                                            Ver ventajas
+                                        </button>
+                                    </h2>
+                                    <div id="ventajas3" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            <ul>
+                                                <li>Aplicación en sectores muy diferentes, como las finanzas, la investigación o la sanidad.</li>
+                                                <li>Permite transformar información en conclusiones útiles.</li>
+                                                <li>Competencias en análisis, estadística y programación.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
     
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desventaja3">
-                                Ciencia e Ingeniería de Datos
-                            </button>
-                        </h2>
-                        <div id="desventaja3" class="accordion-collapse collapse" data-bs-parent="#accordionDesventajas">
-                            <div class="accordion-body text-start">
-                                <ul>
-                                    <li><strong>Importante carga matemática:</strong> exige conocimientos de estadística, probabilidad y cálculo para analizar correctamente la información.</li>
-                                    <li><strong>Trabajo con grandes volúmenes de información:</strong> puede implicar tareas complejas de limpieza, organización y comprobación de datos antes de obtener resultados útiles.</li>
-                                </ul>
+                        <td>
+                            <div class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#desventajas3">
+                                            Ver desventajas
+                                        </button>
+                                    </h2>
+                                    <div id="desventajas3" class="accordion-collapse collapse">
+                                        <div class="accordion-body text-start">
+                                            <ul>
+                                                <li>Importante carga matemática.</li>
+                                                <li>Trabajo complejo de limpieza, organización y comprobación de grandes volúmenes de información.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </td>
+                    </tr>
     
-                </div>
-            </div>
-    
+                </tbody>
+            </table>
         </div>
-    </div>    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
